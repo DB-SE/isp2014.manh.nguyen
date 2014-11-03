@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="Zeitplaner">
+				<description>
+					Der Zeitplaner hilft der Nutzer dabei, ihre tägliche Aktivitäten auf einfache Weise zu verwalten.
+					Es bietet mehrere Merkmale wie z.B. Auswählen verschiedenen Kalenderansichten , Eintragen die nötige Aufgabe und Erinnerung  , 
+					 personalisierbare Einstellungen usw.
+				</description>
+				<and abstract="true" mandatory="true" name="Base">
+					<feature mandatory="true" name="GUI">
+						<description>
+							Darstellung der Kalenderwoche und Aufgaben
+						</description>
+					</feature>
+					<feature mandatory="true" name="Eingabe">
+						<description>
+							Texteingabe für Termin und Aufgaben
+						</description>
+					</feature>
+				</and>
+				<and mandatory="true" name="Kalender">
+					<description>
+						Kalenderfunktion kann in verschiedenen Ansicht dargestellt.
+						Der Benutzer kann dabei mit wenigen Klicks zu jeden beliebigen Datum navigieren.
+						Außerdem kann der Nutzer die Termine einlegen und bearbeiten.
+					</description>
+					<alt abstract="true" mandatory="true" name="Ansicht">
+						<description>
+							umschaltbares Kalenderansichten
+						</description>
+						<feature mandatory="true" name="Tag">
+							<description>
+								Tagesansicht
+							</description>
+						</feature>
+						<feature mandatory="true" name="Woche">
+							<description>
+								Wochenansicht
+							</description>
+						</feature>
+						<feature mandatory="true" name="Monat">
+							<description>
+								Monatenansicht
+							</description>
+						</feature>
+						<feature mandatory="true" name="Jahr">
+							<description>
+								Jahresansicht
+							</description>
+						</feature>
+					</alt>
+					<feature mandatory="true" name="Schaltflaeche">
+						<description>
+							- durch den Kalender navigieren.
+							- z.B: Tagesansicht- Anzeigen vorherige, aktuelle oder nächste Tag
+						</description>
+					</feature>
+					<feature name="Deutsche_Feiertage">
+						<description>
+							- Anzeigen deutsche Feiertage
+							- an- und abschaltbare
+						</description>
+					</feature>
+					<and mandatory="true" name="Termin_Erinnerung">
+						<description>
+							die eingetragene Termine können in frei wählbaren Zeitabständen wiederholt werden.
+						</description>
+						<and abstract="true" mandatory="true" name="Zeitraum">
+							<description>
+								
+							</description>
+							<feature mandatory="true" name="Startdatum">
+								<description>
+									Das Startdatum bestimmt, ab welchem Tag die Termin erfolgen soll.
+								</description>
+							</feature>
+							<feature mandatory="true" name="Endedatum">
+								<description>
+									Das Endedatum bestimmt, bis zu welchem Tag die Termin erfolgen soll.
+								</description>
+							</feature>
+						</and>
+						<feature mandatory="true" name="Popup_Fenster">
+							<description>
+								Die Terminerinnerung wird direkt über ein Pop-up-Fenster direkt  erscheinen.
+							</description>
+						</feature>
+						<alt abstract="true" name="Zeitintervall">
+							<description>
+								Der Nutzer stellt hier ein, in welchem Zeitintervall der Termin wiederholt werden soll
+							</description>
+							<feature mandatory="true" name="Taeglich">
+								<description>
+									Jeden Tag
+									täglich
+									Alle x Tag
+								</description>
+							</feature>
+							<feature mandatory="true" name="Woechentlich">
+								<description>
+									Wöchentlich
+								</description>
+							</feature>
+							<feature mandatory="true" name="Jaehrlich">
+								<description>
+									Jährlich
+								</description>
+							</feature>
+						</alt>
+					</and>
+				</and>
+				<and mandatory="true" name="Aufgaben_Notizen">
+					<description>
+						Eintragen diie nötige Aufgaben
+					</description>
+					<alt abstract="true" mandatory="true" name="Bearbeiten">
+						<description>
+							In eine To-Do-List wird fesgehalten, welche Aufgaben anstehen 
+							und welche Aufgabe noch zu erledigen.
+						</description>
+						<feature mandatory="true" name="To_Do">
+							<description>
+								anstehende Aufgabe
+							</description>
+						</feature>
+						<feature mandatory="true" name="Erledigt">
+							<description>
+								erledigenden Aufgaben wird nach und nach durchgestrichen.
+							</description>
+						</feature>
+					</alt>
+					<alt abstract="true" name="Priorität">
+						<description>
+							Die Aufgaben können nach die richtige Priorität zuordnen
+						</description>
+						<feature mandatory="true" name="Niedrig">
+							<description>
+								- unwichtige Aufgaben
+								-Textfarbe = Blau
+							</description>
+						</feature>
+						<feature mandatory="true" name="Mittel">
+							<description>
+								-normale Aufgaben
+								-Textfarbe = Schwarz
+							</description>
+						</feature>
+						<feature mandatory="true" name="Hoch">
+							<description>
+								-wichtigste und dringende Aufgaben
+								-Textfarbe = ROT
+							</description>
+						</feature>
+					</alt>
+				</and>
+				<or abstract="true" name="Funktionen">
+					<feature mandatory="true" name="Filtern">
+						<description>
+							Filtern nach die Priorität der Aufgaben
+							Filter die Termin in einem bestimmten Zeitraum
+						</description>
+					</feature>
+					<feature mandatory="true" name="Suchen">
+						<description>
+							Suchen nach eine bestimmten Termin oder Aufgaben
+						</description>
+					</feature>
+				</or>
+				<alt abstract="true" name="Speichern">
+					<description>
+						Exportiert die Einträge in beliebge Dateiformat
+					</description>
+					<feature mandatory="true" name="TXT">
+						<description>
+							Klartext
+						</description>
+					</feature>
+					<feature mandatory="true" name="CSV">
+						<description>
+							CSV-Datei
+						</description>
+					</feature>
+				</alt>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
