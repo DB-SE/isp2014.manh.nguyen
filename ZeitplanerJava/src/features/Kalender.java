@@ -9,7 +9,6 @@ public class Kalender {
 	
 	public Kalender(){
 		//System.out.println("--- Kalenderansichten ---");
-		
 	}
 	
 	public void setKID(int id){
@@ -39,7 +38,7 @@ public class Kalender {
 		return listOptionen;
 	}
 	
-	public static void kalenderOption(int eingabe) {
+	public static void kalenderOption(int eingabe){
 		 
 		 if(eingabe == tID){
 			 System.out.println("Tagesansicht hat gewaehlt.");

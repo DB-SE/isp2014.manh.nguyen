@@ -4,7 +4,6 @@ package main;
 public class Konfigurationen {
 
 	private boolean kalender = false;
-
 	private boolean notizen = false;
 
 

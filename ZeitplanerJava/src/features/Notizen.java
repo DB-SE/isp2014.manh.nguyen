@@ -9,7 +9,6 @@ public class Notizen {
 	
 	public Notizen(){
 		//System.out.println("--- Notizen ---");
-		
 	}
 	public void setNID(int id){
 		this.nID = id;

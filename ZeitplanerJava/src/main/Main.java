@@ -25,7 +25,6 @@ public class Main{
 			System.exit(0);
 		} 
 		else {
-		
 		konfigAnalyse(args);
 		if(Konfig.getKalender()){
 			optionen.add("Kalender");
@@ -37,8 +36,7 @@ public class Main{
 			notizen.setNID(i);
 			i++;
 		}
-		runFeature(createOptionen(optionen));
-		
+		runFeature(createOptionen(optionen));	
 		}		
 	}
 	
@@ -60,6 +58,7 @@ public class Main{
 		
 		return eingabeO();
 	}
+	
 	public static int eingabeO(){
 		Scanner sEingabe = new Scanner(System.in);
 		int iEingabe = sEingabe.nextInt();
