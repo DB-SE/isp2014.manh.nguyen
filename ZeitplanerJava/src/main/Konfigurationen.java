@@ -23,6 +23,7 @@ public class Konfigurationen {
 	public void setNotizen(boolean notizen){
 		this.notizen = notizen;
 	}
+	
 	public boolean getNotizen(){
 		return notizen;
 	}

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Notizen {
 
-	private static int nID,prioNID,prioMID,prioHID;
+	private static int nID, prioNID, prioMID, prioHID;
 	private static boolean selNotizen = false;
 	
 	public Notizen(){
@@ -17,9 +17,11 @@ public class Notizen {
 	public int getNID(){
 		return nID ;
 	}
+	
 	public boolean selNotizen(){
 		return selNotizen;
 	}
+	
 	public static ArrayList<String> createNOptionen(){
 		System.out.println("Notizen hat gewaehlt.");
 		System.out.println("--- Auswahl der Prioritäten ---");

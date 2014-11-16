@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Kalender {
 
-	private static int kID,tID,wID,mID;
+	private static int kID, tID, wID, mID;
 	private static boolean selKalender = false;
 	
 	public Kalender(){
@@ -22,6 +22,7 @@ public class Kalender {
 	public boolean selKalender(){
 		return selKalender;
 	}
+	
 	public static ArrayList<String> createKOptionen(){
 		System.out.println("Kalender hat gewaehlt.");
 		System.out.println("--- Auswahl des Kalenderansichten ---");

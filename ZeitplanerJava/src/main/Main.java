@@ -6,6 +6,7 @@ import features.Kalender;
 import features.Notizen;
 
 public class Main{
+	
 	private static Konfigurationen Konfig = new Konfigurationen();
 	private static Kalender kalender = new Kalender();
 	private static Notizen notizen = new Notizen();
@@ -25,6 +26,7 @@ public class Main{
 			System.exit(0);
 		} 
 		else {
+			
 		konfigAnalyse(args);
 		if(Konfig.getKalender()){
 			optionen.add("Kalender");
