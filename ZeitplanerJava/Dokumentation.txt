@@ -1,4 +1,4 @@
------ Aufgaben 2 -----
+----- Aufgabe 2 -----
 
 Die folgenden Kombinationen wurde gestestet:
 
