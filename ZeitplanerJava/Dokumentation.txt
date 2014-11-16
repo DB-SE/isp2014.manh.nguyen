@@ -1,0 +1,22 @@
+----- Aufgaben 2 -----
+
+Die folgenden Kombinationen wurde gestestet:
+
+1) Kalender 					 -> Ausführung von Kalender-Feature
+2) Notizen						 -> Ausführung von Notizen-Feature
+3) Kalender und Notizen			 -> Ausführung von Kalender- und Notizen-Feature
+4) Kein Argument/Falsche Eingabe -> keine Ausführung
+
+
+Ausführung des Features:
+
+--Kalender--
+-> Tagesansicht
+-> Wochenansicht
+-> Monatenansicht
+
+
+--Notizen--
+-> Priorität niedrig
+-> Priorität mittel
+-> Priorität hoch
