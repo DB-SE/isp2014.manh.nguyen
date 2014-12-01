@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="Zeitplaner">
+				<and mandatory="true" name="Kalender">
+					<alt mandatory="true" name="Ansicht">
+						<feature mandatory="true" name="Tag"/>
+						<feature mandatory="true" name="Woche"/>
+						<feature mandatory="true" name="Monat"/>
+					</alt>
+					<feature name="Termin"/>
+				</and>
+				<and name="Notizen">
+					<alt name="Prioritaet">
+						<feature mandatory="true" name="Niedrig"/>
+						<feature mandatory="true" name="Mittel"/>
+						<feature mandatory="true" name="Hoch"/>
+					</alt>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
