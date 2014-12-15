@@ -12,7 +12,6 @@ public class MittelPrio implements FPlugin {
 	public boolean isSelected(String name) {
 		return name.equalsIgnoreCase(this.name);
 	}
-
 	public void print() {
 		System.out.println("Aufgaben soll erledigt werden (Prioritaet mittel).");
 		System.out.println();

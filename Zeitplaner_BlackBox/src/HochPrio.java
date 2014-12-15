@@ -18,6 +18,5 @@ public class HochPrio implements FPlugin {
 		System.out.println();
 		System.out.println("-- Zeiplaner Framework beendet --");
 		System.exit(0);
-	}
-	
+	}	
 }

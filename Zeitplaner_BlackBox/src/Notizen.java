@@ -4,21 +4,15 @@ public class Notizen implements Plugin {
 	
 	String name;
 
-	
 	public Notizen(String name){
 		this.name = name;
 	}
 	
-	
 	public String getName() {
 		return this.name;
 	}
-	
-	public boolean isSelected(){
-		return false;
-	}
-	public void getPlugin(){
-		
+
+	public void getPlugin(){		
 		System.out.println("");
 		System.out.println("Notizen hat gewaehlt.");
 		System.out.println("");

@@ -1,6 +1,4 @@
 
-import java.util.*;
-
 public class Wochenansicht implements FPlugin {
 
 	String name;
