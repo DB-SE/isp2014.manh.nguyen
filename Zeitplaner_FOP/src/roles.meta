@@ -1,0 +1,73 @@
+{
+	"features" : [
+		"Zeitplaner",
+		"Kalender",
+		"Ansicht",
+		"Jahr",
+		"Monat",
+		"Tag"
+	],
+	"roles": {
+		"isSelected": {
+			"Zeitplaner": "isSelected",
+			"Jahr": "isSelected",
+			"Monat": "isSelected",
+			"Tag": "isSelected"
+		},
+		"print": {
+			"Zeitplaner": "print",
+			"Jahr": "print",
+			"Monat": "print",
+			"Tag": "print"
+		},
+		"getName": {
+			"Zeitplaner": "getName",
+			"Kalender": "getName",
+			"Jahr": "getName",
+			"Monat": "getName",
+			"Tag": "getName"
+		},
+		"main": {
+			"Zeitplaner": "main__wrappee__Zeitplaner",
+			"Kalender": "main"
+		},
+		"createOptionen": {
+			"Zeitplaner": "createOptionen"
+		},
+		"createFOptionen": {
+			"Zeitplaner": "createFOptionen"
+		},
+		"getPlugin": {
+			"Zeitplaner": "getPlugin__wrappee__Kalender",
+			"Kalender": "getPlugin__wrappee__Kalender",
+			"Jahr": "getPlugin__wrappee__Jahr",
+			"Monat": "getPlugin__wrappee__Monat",
+			"Tag": "getPlugin"
+		},
+		"setYYMMDD": {
+			"Tag": "setYYMMDD"
+		},
+		"gui": {
+			"Tag": "gui"
+		},
+		"monthInput": {
+			"Tag": "monthInput"
+		},
+		"yearInput": {
+			"Tag": "yearInput"
+		},
+		"setDayActive": {
+			"Tag": "setDayActive"
+		},
+		"clearDayActive": {
+			"Tag": "clearDayActive"
+		},
+		"calc": {
+			"Tag": "calc"
+		},
+		"isLeap": {
+			"Tag": "isLeap"
+		}
+	}
+
+}

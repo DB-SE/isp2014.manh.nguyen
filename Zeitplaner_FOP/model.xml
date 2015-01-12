@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="Zeitplaner_FOP">
+				<and mandatory="true" name="Zeitplaner">
+					<and name="Notizen">
+						<or name="Prioritaet">
+							<feature mandatory="true" name="Niedrig"/>
+							<feature mandatory="true" name="Mittel"/>
+							<feature mandatory="true" name="Hoch"/>
+						</or>
+					</and>
+					<and name="Kalender">
+						<or mandatory="true" name="Ansicht">
+							<feature mandatory="true" name="Jahr"/>
+							<feature mandatory="true" name="Monat"/>
+							<feature mandatory="true" name="Tag"/>
+						</or>
+					</and>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
